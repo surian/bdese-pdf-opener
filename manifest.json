@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "BDESE – Ouvrir PDF natif",
+  "version": "1.0",
+  "description": "Remplace la visionneuse PDF embarquée par l'ouverture directe du fichier dans le lecteur PDF du navigateur.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bdes.editions-legislatives.fr/*",
+        "https://bdese.editions-legislatives.fr/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
